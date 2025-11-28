@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  margin: 0;
+  background-color: var(--bg);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 32px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+}
+
+.logoWrapper {
+  width: 188px;
+  height: 21px;
+  margin: 0;
+}
+
+.logoIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.link {
+  margin: 0;
+  color: var(--color-text-nonactive);
+  font-family: var(--font-gt-eesti-pro-display-light);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.link:hover {
+  color: var(--color-light);
+}
