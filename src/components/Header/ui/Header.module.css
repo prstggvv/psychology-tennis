@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   margin: 0;
-  background-color: var(--bg);
+  background-color: var(--background-dark);
 }
 
 .container {
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg);
+  background-color: var(--background-dark);
 }
 
 .logoWrapper {
@@ -27,21 +27,40 @@
   object-position: center;
 }
 
-.nav {
+.numberBlock {
   display: flex;
-  align-items: center;
-  gap: 32px;
+  gap: 15px;
+  align-items: flex-start;
 }
 
-.link {
+.svg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: right;
+}
+
+.number {
+  font-size: 20px;
+  line-height: 150%;
+  font-family: var(--font-gt-eesti-pro-display-bold);
   margin: 0;
-  color: var(--color-text-nonactive);
-  font-family: var(--font-gt-eesti-pro-display-light);
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 21px;
+  color: var(--text-color-light);
 }
 
-.link:hover {
-  color: var(--color-light);
+.subtext {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  margin: 0;
+  font-family: var(--font-gt-eesti-pro-display-regular);
+  color: var(--text-color-light);
 }

@@ -1,0 +1,6 @@
+.button {
+  border: none;
+  cursor: auto;
+  font-family: var(--font-gt-eesti-pro-display-regular);
+  font-size: 14px;
+}

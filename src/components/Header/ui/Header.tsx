@@ -2,6 +2,7 @@ import cls from './Header.module.css';
 import Image from 'next/image';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import logoSvg from '@/shared/assets/images/icons/Logo.svg';
+import PhoneSvg from '@/shared/assets/images/icons/phone.svg';
 
 interface IHeaderProps {
   className?: string;
@@ -20,26 +21,23 @@ export const Header = ({ className }: IHeaderProps) => {
             className={classNames(cls.logoIcon, {}, [])}
           />
         </div>
-        <nav className={classNames(cls.nav, {}, [])}>
-          <a
-            className={classNames(cls.link, {}, [])}
-            href='#'
-          >
-            Главная
-          </a>
-          <a
-            className={classNames(cls.link, {}, [])}
-            href='#'
-          >
-            Помидор
-          </a>
-          <a
-            className={classNames(cls.link, {}, [])}
-            href='#'
-          >
-            Статистика
-          </a>
-        </nav>
+        <div className={classNames(cls.numberBlock)}>
+          <Image
+            src={PhoneSvg}
+            alt='phone'
+            width={40}
+            height={40}
+            className={classNames(cls.svg, {}, [])}
+          />
+          <div className={classNames(cls.text, {}, [])}>
+            <p className={classNames(cls.number, {}, [])}>
+              +7 (777) 707-37-97
+            </p>
+            <p className={classNames(cls.subtext, {}, [])}>
+              Написать нам в Telegram
+            </p>
+          </div>
+        </div>
       </div>
     </header>
   )
