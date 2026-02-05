@@ -21,28 +21,23 @@ export const Hero = ({ className }: IHeroProps) => {
             className={classNames(cls.image, {}, [])}
           />
         </div>
-        <div className={classNames(cls.mainInfo, {}, [])}>
-          <h1 className={classNames(cls.title, {}, [])}>
-            Еркеева Александра
-          </h1>
-          <div className={classNames(cls.subBlock, {}, [])}>
-            <p className={classNames(cls.subtitle, {}, [])}>
-              Теннисный тренер-психолог
+        <div className={classNames(cls.subBlock, {}, [])}>
+          <p className={classNames(cls.subtitle, {}, [])}>
+            Теннисный тренер-психолог
+          </p>
+          <Button
+            className={classNames(cls.button, {}, [])}
+            type='button'
+          >
+            <Image
+              className={classNames(cls.svg, {}, [])}
+              src={ArrowSvg}
+              alt='стрелка'
+            />
+            <p className={classNames(cls.text, {}, [])}>
+              Наш зал
             </p>
-            <Button
-              className={classNames(cls.button, {}, [])}
-              type='button'
-            >
-              <Image
-                className={classNames(cls.svg, {}, [])}
-                src={ArrowSvg}
-                alt='стрелка'
-              />
-              <p className={classNames(cls.text, {}, [])}>
-                Наш зал
-              </p>
-            </Button>
-          </div>
+          </Button>
         </div>
       </div>
     </section>

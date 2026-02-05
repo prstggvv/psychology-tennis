@@ -6,6 +6,8 @@ import AboutMeImage from '@/shared/assets/images/hero/mainHero.jpg';
 import { aboutMeData } from '../model/aboutMeData';
 import Button from '@/shared/ui/Button/Button';
 import ArrowSvg from '@/shared/assets/images/icons/arrow.svg';
+import Circle from '@/shared/ui/Circle/Circle';
+import Line from '@/shared/ui/Line/Line';
 
 interface IAboutMeProps {
   className?: string;
@@ -21,13 +23,16 @@ export const AboutMe = ({ className }: IAboutMeProps) => {
             alt='Картинка'
             className={classNames(cls.image, {}, [])}
           />
+          <Circle
+            className={classNames(cls.circle, {}, [])}
+          />
         </div>
         <h2 className={classNames(cls.headingMobile, {}, [])}>
           Обо мне
         </h2>
         <div className={classNames(cls.mainInfo, {}, [])}>
           <h2 className={classNames(cls.heading, {}, [])}>
-            Обо мне
+            Обо <span className={classNames(cls.span, {}, [])}>мне</span>
           </h2>
           <div className={classNames(cls.main, {}, [])}>
             <p className={classNames(cls.text, {}, [])}>
@@ -50,6 +55,7 @@ export const AboutMe = ({ className }: IAboutMeProps) => {
             </p>
           </Button>
         </div>
+        <Line />
       </div>
     </section>
   )
