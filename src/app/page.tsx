@@ -4,6 +4,8 @@ import { Header } from "@/components/Header";
 import { Hero } from '@/components/Hero';
 import { AboutMe } from '@/components/AboutMe';
 import { ProblemsSection } from '@/components/ProblemsSection';
+import { QuesSection } from '@/components/QuesSection';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -13,7 +15,8 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <ProblemsSection />
-
+        <QuesSection />
+        <Footer />
       </div>
     </div>
   );

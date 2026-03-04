@@ -4,6 +4,13 @@
   --font-gt-eesti-pro-display-light: 'GT Eesti Pro Display-light', sans-serif;
   --font-gt-eesti-pro-display-regular: 'GT Eesti Pro Display-regular', sans-serif;
   --font-gt-eesti-pro-display-bold: 'GT Eesti Pro Display-bold', sans-serif;
+
   --background-dark: rgba(0, 0, 0, 1);
   --text-color-light: rgba(255, 255, 255, 1);
+
+  /* Tennis-inspired green palette */
+  --tennis-green-bg: #f2fbf5;
+  --tennis-green-soft: #cce9d7;
+  --tennis-green-accent: #0c7a3c;
+  --tennis-green-accent-soft: #46a568;
 }
