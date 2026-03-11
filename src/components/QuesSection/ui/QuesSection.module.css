@@ -1,0 +1,96 @@
+.section {
+  width: 100%;
+  margin: 0;
+  background-color: var(--background-dark);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1107px;
+  margin: 0 auto;
+  padding: 100px 20px 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  background-color: var(--background-dark);
+  position: relative;
+}
+
+.heading {
+  font-size: 36px;
+  font-family: var(--font-gt-eesti-pro-display-bold);
+  line-height: 70px;
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--text-color-light);
+}
+
+.span {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-color-light);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0px 0px 45px;
+  border-bottom: 1px solid var(--text-color-light);
+  color: var(--text-color-light);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.number {
+  font-size: 24px;
+  font-family: var(--font-gt-eesti-pro-display-regular);
+  line-height: 70px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.ques {
+  font-size: 18px;
+  font-family: var(--font-gt-eesti-pro-display-regular);
+  line-height: 150%;
+  margin: 0;
+  padding-left: 100px;
+}
+
+.svg {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  object-position: center;
+  align-self: flex-end;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 812px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .ques {
+    padding-left: 0;
+    font-size: 16px;
+  }
+}

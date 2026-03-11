@@ -1,0 +1,30 @@
+.circle {
+  border: 2px solid rgba(48, 48, 48, 1);
+  border-radius: 50%;
+  width: 163px;
+  height: 163px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.secondCircle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: rgba(48, 48, 48, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  max-width: 120px;
+  font-size: 16px;
+  font-family: var(--font-gt-eesti-pro-display-regular);
+  line-height: 28px;
+  margin: 0;
+  letter-spacing: 2px;
+  color: rgba(215, 191, 107, 1);
+}
